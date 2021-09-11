@@ -2,15 +2,16 @@ let outputEl = document.querySelector(".output-el");
 //let clickContainer = document.querySelector(".click-container")
 let clickContainerLength = document.querySelectorAll(".click-container").length;
 let clickContainer = document.querySelectorAll(".click-container")
-
-
+let inputEl = document.getElementById("input-el")
+let aOutput = document.getElementById("aurebesh-output")
+let translateBtn = document.getElementById("translate-btn")
 function renderOutput(str) {
     let output = str;
     outputEl.textContent += output;
 }
 
-function deleteOutputAll() {
-    outputEl.textContent = " ";
+function deleteOutputAll(elem) {
+    elem.textContent = " ";
 }
 
 function backspace() {
@@ -22,3 +23,8 @@ function backspace() {
 function space() {
     outputEl.textContent += " ";
 }
+
+translateBtn.addEventListener("click", function() {
+    aOutput.innerHTML = inputEl.value;
+    inputEl.value = ""
+})

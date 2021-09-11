@@ -9,7 +9,7 @@
 </head>
 <body>
 
-<section id="translator">   
+<section id="a-e-translator">   
      <h1>Aurebesh Translator</h1>
     <div class="click-container">
         <button class="aurebesh" onclick="renderOutput('A')">A</button>
@@ -40,14 +40,25 @@
         <button class="aurebesh" onclick="renderOutput('Z')">Z</button>
     </div>
     <div class="delete-area">
-        <button class ="ctrl-btns" onclick="deleteOutputAll()">Delete All</button>
+        <button class ="ctrl-btns" onclick="deleteOutputAll(outputEl)">Delete All</button>
         <button class="ctrl-btns" onclick="backspace()">Backspace</button>
         <button class="ctrl-btns" onclick="space()">Space</button>
     </div>
     
-    <h2>Text Output:</h2>
+    <h2>English translation:</h2>
     <div class="output-el"></div>
 </section>
+
+<section id="e-a-translator">
+    <h1>English to Aurebesh translator</h1>
+    <input type="text" id="input-el">
+    <button id="translate-btn">Translate</button>
+    <button class ="ctrl-btns" onclick="deleteOutputAll(aOutput)">Delete All</button>
+    <h2>Aurebesh translation</h2>
+    <div id="aurebesh-output" class="aurebesh"></div>
+    
+</section>
+
 <footer> 
     <a id="profile-link"
     href="https://github.com/BenTechCoder"
