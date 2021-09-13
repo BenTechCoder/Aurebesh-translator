@@ -8,60 +8,57 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
+    <h1 id="a-e-h1">Aurebesh Translator</h1>
 <section id="a-e-translator">   
-     <h1>Aurebesh Translator</h1>
     <div class="click-container">
-        <button class="aurebesh" onclick="renderOutput('A')">A</button>
-        <button class="aurebesh" onclick="renderOutput('B')">B</button>
-        <button class="aurebesh" onclick="renderOutput('C')">C</button>
-        <button class="aurebesh" onclick="renderOutput('D')">D</button>
-        <button class="aurebesh" onclick="renderOutput('E')">E</button>
-        <button class="aurebesh" onclick="renderOutput('F')">F</button>
-        <button class="aurebesh" onclick="renderOutput('G')">G</button>
-        <button class="aurebesh" onclick="renderOutput('H')">H</button>
-        <button class="aurebesh" onclick="renderOutput('I')">I</button>
-        <button class="aurebesh" onclick="renderOutput('J')">J</button>
-        <button class="aurebesh" onclick="renderOutput('K')">K</button>
-        <button class="aurebesh" onclick="renderOutput('L')">L</button>
-        <button class="aurebesh" onclick="renderOutput('M')">M</button>
-        <button class="aurebesh" onclick="renderOutput('N')">N</button>
-        <button class="aurebesh" onclick="renderOutput('O')">O</button>
-        <button class="aurebesh" onclick="renderOutput('P')">P</button>
-        <button class="aurebesh" onclick="renderOutput('Q')">Q</button>
-        <button class="aurebesh" onclick="renderOutput('R')">R</button>
-        <button class="aurebesh" onclick="renderOutput('S')">S</button>
-        <button class="aurebesh" onclick="renderOutput('T')">T</button>
-        <button class="aurebesh" onclick="renderOutput('U')">U</button>
-        <button class="aurebesh" onclick="renderOutput('V')">V</button>
-        <button class="aurebesh" onclick="renderOutput('X')">W</button>
-        <button class="aurebesh" onclick="renderOutput('X')">X</button>
-        <button class="aurebesh" onclick="renderOutput('Y')">Y</button>
-        <button class="aurebesh" onclick="renderOutput('Z')">Z</button>
+        <button class="aurebesh aurebesh-btns" onclick="renderOutput('A')">A</button>
+        <button class="aurebesh aurebesh-btns" onclick="renderOutput('B')">B</button>
+        <button class="aurebesh aurebesh-btns" onclick="renderOutput('C')">C</button>
+        <button class="aurebesh aurebesh-btns" onclick="renderOutput('D')">D</button>
+        <button class="aurebesh aurebesh-btns" onclick="renderOutput('E')">E</button>
+        <button class="aurebesh aurebesh-btns" onclick="renderOutput('F')">F</button>
+        <button class="aurebesh aurebesh-btns" onclick="renderOutput('G')">G</button>
+        <button class="aurebesh aurebesh-btns" onclick="renderOutput('H')">H</button>
+        <button class="aurebesh aurebesh-btns" onclick="renderOutput('I')">I</button>
+        <button class="aurebesh aurebesh-btns" onclick="renderOutput('J')">J</button>
+        <button class="aurebesh aurebesh-btns" onclick="renderOutput('K')">K</button>
+        <button class="aurebesh aurebesh-btns" onclick="renderOutput('L')">L</button>
+        <button class="aurebesh aurebesh-btns" onclick="renderOutput('M')">M</button>
+        <button class="aurebesh aurebesh-btns" onclick="renderOutput('N')">N</button>
+        <button class="aurebesh aurebesh-btns" onclick="renderOutput('O')">O</button>
+        <button class="aurebesh aurebesh-btns" onclick="renderOutput('P')">P</button>
+        <button class="aurebesh aurebesh-btns" onclick="renderOutput('Q')">Q</button>
+        <button class="aurebesh aurebesh-btns" onclick="renderOutput('R')">R</button>
+        <button class="aurebesh aurebesh-btns" onclick="renderOutput('S')">S</button>
+        <button class="aurebesh aurebesh-btns" onclick="renderOutput('T')">T</button>
+        <button class="aurebesh aurebesh-btns" onclick="renderOutput('U')">U</button>
+        <button class="aurebesh aurebesh-btns" onclick="renderOutput('V')">V</button>
+        <button class="aurebesh aurebesh-btns" onclick="renderOutput('X')">W</button>
+        <button class="aurebesh aurebesh-btns" onclick="renderOutput('X')">X</button>
+        <button class="aurebesh aurebesh-btns" onclick="renderOutput('Y')">Y</button>
+        <button class="aurebesh aurebesh-btns" onclick="renderOutput('Z')">Z</button>
     </div>
     <div class="delete-area">
         <button class ="ctrl-btns" onclick="deleteOutputAll(outputEl)">Delete All</button>
         <button class="ctrl-btns" onclick="backspace()">Backspace</button>
         <button class="ctrl-btns" onclick="space()">Space</button>
     </div>
-    
     <h2>English translation:</h2>
     <div class="output-el"></div>
 </section>
-
+<h1>English-to-Aurebesh translator</h1>
 <section id="e-a-translator">
-    <h1>English to Aurebesh translator</h1>
     <input type="text" id="input-el">
     <button id="translate-btn">Translate</button>
     <button class ="ctrl-btns" onclick="deleteOutputAll(aOutput)">Delete All</button>
     <h2>Aurebesh translation:</h2>
-    <div id="aurebesh-output" class="aurebesh"></div>
+    <p id="aurebesh-output" class="aurebesh, output-el"></p>
     
 </section>
 
 <footer> 
     <a id="profile-link"
-    href="https://github.com/BenTechCoder"
+    href="https://github.com/BenTechCoder/aurebesh-translator"
     target="_blank"
     class="fab fa-github">
     GitHub</a>    

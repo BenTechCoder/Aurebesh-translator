@@ -7,7 +7,7 @@ let aOutput = document.getElementById("aurebesh-output")
 let translateBtn = document.getElementById("translate-btn")
 function renderOutput(str) {
     let output = str;
-    outputEl.textContent += output;
+    outputEl.innerHTML += output;
 }
 
 function deleteOutputAll(elem) {

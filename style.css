@@ -1,6 +1,20 @@
+/*
+color scheme:
+rgb(51, 102, 153) 
+rgb(134, 187, 216)
+rgb(42, 72, 88)
+rgb(158, 228, 147)
+rgb(218, 247, 220)
+*/
+
 * {
     margin: 0;
     padding: 0;
+}
+
+html {
+    font-size: 75%;
+    background-color:rgb(218, 247, 220) ;
 }
 
 @font-face {
@@ -8,8 +22,91 @@
     src: url('AurebeshAF-Canon.otf');
   }
 
-
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
 
 .aurebesh {
     font-family: cannon-aurebesh, sans-serif;
+}
+
+h1 {
+    display: block;
+    color: aliceblue;
+    background-color: rgb(51, 102, 153);
+    font-size: 4rem;
+    text-align: center;
+}
+
+#a-e-translator {
+    background-color: rgb(134, 187, 216);
+    font-size: 2rem;
+    margin: 1rem;
+    padding: 2rem;
+}
+
+.click-container {
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.aurebesh-btns {
+    width: 8rem;
+    height: 5rem;
+    background-color: rgb(158, 228, 147);
+}
+
+
+.ctrl-btns {
+    width: 7rem;
+    height: 5rem;
+    color: aqua;
+    background-color: rgb(42, 72, 88);
+    margin-bottom: 1rem;
+}
+
+.output-el {
+    display: block;
+    background-color: rgb(158, 228, 147);
+    color: rgb(41, 120, 163);
+    text-align: center;
+}
+
+#e-a-translator {
+background-color: rgb(134, 187, 216);
+font-size: 2rem;
+margin: 1rem;
+padding: 2rem;
+}
+
+#translate-btn {
+    width: 7rem;
+    height: 5rem;
+    background-color: rgb(158, 228, 147);
+}
+
+input {
+    display: block;
+    margin: 1rem;
+    width: 90%;
+    height: 5rem;
+}
+footer {
+    width: 100%;
+    color: aliceblue;
+    font-weight: bold;
+    background-color: rgb(108, 156, 158);
+    font-size: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+@media only screen and (min-width: 768px) and (orientation : portrait) {
+    html {
+        font-size: 20px;
+    }
 }
