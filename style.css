@@ -43,6 +43,13 @@ h1 {
     font-size: 2rem;
     margin: 1rem;
     padding: 2rem;
+  box-shadow:
+  0 2.1px 2.7px rgba(0, 0, 0, 0.088),
+  0 5.4px 6.9px rgba(0, 0, 0, 0.13),
+  0 11px 14.2px rgba(0, 0, 0, 0.156),
+  0 22.6px 29.2px rgba(0, 0, 0, 0.177),
+  0 62px 80px rgba(0, 0, 0, 0.2)
+;
 }
 
 .click-container {
@@ -80,6 +87,13 @@ background-color: rgb(134, 187, 216);
 font-size: 2rem;
 margin: 1rem;
 padding: 2rem;
+  box-shadow:
+  0 2.1px 2.7px rgba(0, 0, 0, 0.088),
+  0 5.4px 6.9px rgba(0, 0, 0, 0.13),
+  0 11px 14.2px rgba(0, 0, 0, 0.156),
+  0 22.6px 29.2px rgba(0, 0, 0, 0.177),
+  0 62px 80px rgba(0, 0, 0, 0.2)
+;
 }
 
 #translate-btn {
