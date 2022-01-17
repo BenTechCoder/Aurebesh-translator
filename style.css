@@ -18,16 +18,24 @@ html {
 }
 
 @font-face {
-    font-family: cannon-aurebesh; 
-    src: url('AurebeshAF-Canon.otf');
-  }
+    font-family: 'cannon-aurebesh';
+    src: url('aurebeshaf-canon-webfont.woff2') format('woff2'),
+         url('aurebeshaf-canon-webfont.woff') format('woff'),
+         url('AurebeshAF-Canon.otf');
+         font-display: swap;
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
 
   body {
     font-family: Arial, Helvetica, sans-serif;
   }
 
 .aurebesh {
-    font-family: cannon-aurebesh, sans-serif;
+    font-family: "cannon-aurebesh", sans-serif;
 }
 
 h1 {
@@ -109,15 +117,17 @@ input {
     height: 5rem;
 }
 footer {
-    width: 100%;
+ 
     color: aliceblue;
     font-weight: bold;
     background-color: rgb(108, 156, 158);
     font-size: 2rem;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    
+    gap: 1rem;
 }
 @media only screen and (min-width: 768px) and (orientation : portrait) {
     html {

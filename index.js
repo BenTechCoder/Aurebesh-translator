@@ -34,3 +34,11 @@ translateBtn.addEventListener("click", function() {
     inputEl.value = ""
 })
 
+window.addEventListener("keydown", function(e) {
+    if (e.key.includes('Enter')) {
+        aOutput.innerHTML = inputEl.value;
+        inputEl.value = ""
+    }
+  
+})
+
