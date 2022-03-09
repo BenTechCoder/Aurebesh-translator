@@ -1,19 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Aurebesh translator</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preload" href="aurebeshaf-canon-webfont.woff2" as="font" type="font/woff2" crossorigin>
-     <link rel="preload" href="aurebeshaf-canon-webfont.woff" as="font" type="font/woff" crossorigin>
-     <meta name="description" content="A small website for translating Aurbesh to English and English to Aurebesh">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="preload"
+      href="aurebeshaf-canon-webfont.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="aurebeshaf-canon-webfont.woff"
+      as="font"
+      type="font/woff"
+      crossorigin
+    />
+    <meta
+      name="description"
+      content="A small website for translating Aurbesh to English and English to Aurebesh"
+    />
+  </head>
+  <body>
     <h1 id="a-e-h1">Aurebesh Translator</h1>
-<section id="a-e-translator">   
-    <div class="click-container">
+    <section id="a-e-translator">
+      <div class="click-container">
         <!--
         <button class="aurebesh aurebesh-btns" onclick="renderOutput('A')">A</button>
         <button class="aurebesh aurebesh-btns" onclick="renderOutput('B')">B</button>
@@ -42,35 +57,49 @@
         <button class="aurebesh aurebesh-btns" onclick="renderOutput('Y')">Y</button>
         <button class="aurebesh aurebesh-btns" onclick="renderOutput('Z')">Z</button>
         -->
-    </div>
-    <div class="delete-area">
-        <button class ="ctrl-btns" onclick="deleteOutputAll(outputEl)">Delete All</button>
+      </div>
+      <div class="delete-area">
+        <button class="ctrl-btns" onclick="deleteOutputAll(outputEl)">
+          Delete All
+        </button>
         <button class="ctrl-btns" onclick="backspace()">Backspace</button>
         <button class="ctrl-btns" onclick="space()">Space</button>
-    </div>
-    <h2>English translation:</h2>
-    <div class="output-el"></div>
-</section>
-<h1>English-to-Aurebesh translator</h1>
-<section id="e-a-translator">
-    <input type="text" id="input-el">
-    <label for="input-el">English-Aurebesh Translator</label>
-    <button id="translate-btn">Translate</button>
-    <button class ="ctrl-btns" onclick="deleteOutputAll(aOutput)">Delete All</button>
-    <h2>Aurebesh translation:</h2>
-    <p id="aurebesh-output" class="aurebesh output-el"></p>
-    
-</section>
+      </div>
+      <h2>English translation:</h2>
+      <div class="output-el"></div>
+    </section>
+    <h1>English-to-Aurebesh translator</h1>
+    <section id="e-a-translator">
+      <input type="text" id="input-el" />
+      <label for="input-el">English-Aurebesh Translator</label>
+      <button id="translate-btn">Translate</button>
+      <button class="ctrl-btns" onclick="deleteOutputAll(aOutput)">
+        Delete All
+      </button>
+      <h2>Aurebesh translation:</h2>
+      <p id="aurebesh-output" class="aurebesh output-el"></p>
+    </section>
 
-<footer> 
-    <a id="profile-link"
-    href="https://github.com/BenTechCoder/aurebesh-translator"
-    target="_blank"
-    class="fab fa-github">
-    GitHub</a>    
-    <p>Made by Benjamin Lebron</p>
-</footer>
-<script src="https://kit.fontawesome.com/ffa42396d3.js" crossorigin="anonymous"></script>
+    <footer>
+      <a
+        id="profile-link"
+        href="https://github.com/BenTechCoder/aurebesh-translator"
+        target="_blank"
+        class="fab fa-github"
+      >
+        GitHub</a
+      >
+      <p>Made by Benjamin Lebron</p>
+    </footer>
+    <script
+      src="https://kit.fontawesome.com/ffa42396d3.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="index.js"></script>
-</body>
+    <script
+      data-goatcounter="https://benlebron.goatcounter.com/count"
+      async
+      src="//gc.zgo.at/count.js"
+    ></script>
+  </body>
 </html>
